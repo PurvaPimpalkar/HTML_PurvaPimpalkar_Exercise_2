@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <title> Question_4</title>
+<head>
+  <style>
+    .marquee_1 {
+      width: 100%;
+      overflow: hidden;
+    }
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 8s linear infinite;
+    }
+    @keyframes marquee {
+        0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+     
+    }
+    .marquee span {
+      display: inline-block;
+      padding-right: 20px;
+      color: red;
+    }
+    .marquee span:nth-child(2) {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee_1">
+    <div class="marquee">
+      <span>Admit Card Released!! </span>
+      <span>Admit Card Released!! </span>
+    </div>
+  </div>
+</body>
+</html>

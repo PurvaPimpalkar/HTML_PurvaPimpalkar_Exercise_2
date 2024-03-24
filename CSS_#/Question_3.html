@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question_3</title>
+<style>
+  
+  
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .column {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .column:hover img {
+    transform: rotate(15deg);
+  }
+
+  .column:nth-child(4),
+  .column:nth-child(5) {
+    flex: 0 0 calc(33.33% - 10px);
+  }
+
+  .column img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  
+  .second-row .column img:hover {
+    transform: scale(1.2);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/Image1.jpg" alt="Image 1">
+      </div>
+      <div class="column">
+        <img src="images/Image2.jpg" alt="Image 2">
+      </div>
+      <div class="column">
+        <img src="images/Image3.jpg" alt="Image 3">
+      </div>
+    </div>
+    <div class="row second-row">
+      <div class="column">
+        <img src="images/Image1.jpg" alt="Image 4">
+      </div>
+      <div class="column">
+        <img src="images/Image2.jpg" alt="Image 5">
+      </div>
+      <div class="column">
+        <img src="images/Image3.jpg" alt="Image 6">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
